@@ -1,0 +1,82 @@
+body {
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    text-shadow: 1px 1px 2px #87cefa;
+}
+
+.container {
+    margin: auto;
+    justify-content: center;
+    width: 70%;
+    display: flex;
+    height: 60vh;
+    background: linear-gradient(135deg, #ffe4e1, #d1ecff);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    height: 200px;
+    width: 250px;
+    margin: 1.5rem;
+    border: 3px solid #1e90ff;
+    border-radius: 20%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+
+.yellow {
+    background: linear-gradient(135deg, #ffeb3b, #ffc107);
+    color: #4d4d4d;
+}
+
+.red {
+    background: linear-gradient(135deg, #ff6347, #ff4500); 
+    color: #fff;
+}
+
+.pink {
+    background: linear-gradient(135deg, #ff99cc, #ff66b2);
+    color: #fff;
+}
+
+.orange {
+    background: linear-gradient(135deg, #ffb347, #ff7f50); 
+    color: #4d4d4d;
+}
+
+.blue {
+    background: linear-gradient(135deg, #87ceeb, #1e90ff); 
+    color: #fff;
+}
+
+.flash {
+    animation: flash-animation 0.6s ease-in-out;
+}
+
+@keyframes flash-animation {
+    0% { background-color: #000; transform: scale(1); }
+    50% { background-color: #000; transform: scale(1.1); opacity: 0.8; }
+    100% { background-color: initial; transform: scale(1); opacity: 1; }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
